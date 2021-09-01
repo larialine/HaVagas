@@ -65,11 +65,16 @@ public class MainActivity extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 if( (tipoFormacaoList.get(i).equals("Fundamental")) || (tipoFormacaoList.get(i).equals("Médio")) ){
                     fundMedLayout.setVisibility(View.VISIBLE);
+                    gradEspecLayout.setVisibility(View.GONE);
+                    mestDoutLayout.setVisibility(View.GONE);
                 }
                 else if ( (tipoFormacaoList.get(i).equals("Graduação")) || (tipoFormacaoList.get(i).equals("Especialização")) ){
+                    fundMedLayout.setVisibility(View.GONE);
                     gradEspecLayout.setVisibility(View.VISIBLE);
+                    mestDoutLayout.setVisibility(View.GONE);
                 }
                 else if ( (tipoFormacaoList.get(i).equals("Mestrado")) || (tipoFormacaoList.get(i).equals("Doutorado")) ){
+                    fundMedLayout.setVisibility(View.GONE);
                     gradEspecLayout.setVisibility(View.VISIBLE);
                     mestDoutLayout.setVisibility(View.VISIBLE);
                 }
@@ -113,8 +118,8 @@ public class MainActivity extends AppCompatActivity {
                 celular.setVisibility(View.VISIBLE);
                  cel = celular.getText().toString();
             }
-            else if(!adcCelular.isChecked()){
-                celular.setVisibility(View.VISIBLE);
+            else {
+                celular.setVisibility(View.GONE);
                 celular.setText("");
             }
 
@@ -135,7 +140,7 @@ public class MainActivity extends AppCompatActivity {
 
             String vagaInteresse = vagas.getText().toString();
 
-            Formulario formulario = new Formulario(nome, em, receberEmail, tel, tpTel , cel, sexo, dataNasc, anoForma, anoConc, nomeInstituicao, tituloMono, orient, vagaInteresse);
+            Formulario formulario = new Formulario(nome, em, receberEmail, tel, tpTel, cel, sexo, dataNasc, anoForma, anoConc, nomeInstituicao, tituloMono, orient, vagaInteresse);
             Toast.makeText(this, formulario.toString(), Toast.LENGTH_SHORT).show();
 
         }

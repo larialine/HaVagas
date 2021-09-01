@@ -36,21 +36,8 @@ public class Formulario {
         this.vagas = vagas;
     }
 
-    public Formulario(String nome, String email, boolean emailAtualizacao, String telefone, Enum<tpTelefone> tipoTelefone, String celular, Enum<Sexo> sexo, String dtNascimento, null, null, null, null, null, String vagas) {
-        this.nome = nome;
-        this.email = email;
-        this.emailAtualizacao = emailAtualizacao;
-        this.telefone = telefone;
-        this.tipoTelefone = tipoTelefone;
-        this.celular = celular;
-        this.sexo = sexo;
-        this.dtNascimento = dtNascimento;
-        this.anoFormatura = null;
-        this.anoConclusao = null;
-        this.instituicao = null;
-        this.titulo = null;
-        this.orientador = null;
-        this.vagas = vagas;
+    public Formulario(String nome, String email, boolean emailAtualizacao, String telefone, Enum<tpTelefone> tipoTelefone, Enum<Sexo> sexo, String dtNascimento, String vagas) {
+        this(nome, email, emailAtualizacao, telefone, tipoTelefone, null, sexo, dtNascimento, null, null, null, null, null, vagas);
     }
 
     public String getNome() {

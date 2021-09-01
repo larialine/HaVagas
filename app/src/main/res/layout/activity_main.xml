@@ -155,8 +155,7 @@
                 android:hint="Ano de formatura"
                 android:inputType="date"
                 android:padding="5dp"
-                android:layout_margin="5dp"
-                android:visibility="visible"  />
+                android:layout_margin="5dp"  />
 
         </LinearLayout>
 
@@ -174,8 +173,7 @@
                 android:hint="Ano de conclusão"
                 android:inputType="date"
                 android:padding="5dp"
-                android:layout_margin="5dp"
-                android:visibility="visible"  />
+                android:layout_margin="5dp"  />
 
             <EditText
                 android:id="@+id/instituicaoEt"
@@ -184,8 +182,7 @@
                 android:hint="Instituição"
                 android:inputType="text"
                 android:padding="5dp"
-                android:layout_margin="5dp"
-                android:visibility="visible"  />
+                android:layout_margin="5dp"  />
 
         </LinearLayout>
 
@@ -203,8 +200,7 @@
                 android:hint="Título de monografia"
                 android:inputType="text"
                 android:padding="5dp"
-                android:layout_margin="5dp"
-                android:visibility="visible"  />
+                android:layout_margin="5dp" />
 
             <EditText
                 android:id="@+id/orientadorEt"
@@ -213,8 +209,7 @@
                 android:hint="Orientador"
                 android:inputType="textPersonName"
                 android:padding="5dp"
-                android:layout_margin="5dp"
-                android:visibility="visible"  />
+                android:layout_margin="5dp" />
         </LinearLayout>
 
         <EditText
