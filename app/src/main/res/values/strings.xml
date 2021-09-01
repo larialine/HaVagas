@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">HaVagas</string>
+
+    <string-array name="tipo_telefone">
+        <item>Residencial</item>
+        <item>Comercial</item>
+    </string-array>
+
+    <string-array name="tipo_formacao">
+        <item>Fundamental</item>
+        <item>Médio</item>
+        <item>Graduação</item>
+        <item>Especialização</item>
+        <item>Mestrado</item>
+        <item>Doutorado</item>
+    </string-array>
+</resources>
